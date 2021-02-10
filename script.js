@@ -45,7 +45,7 @@ getAllFurnitures = () => {
       productElmnt.setAttribute("style", "bottom: 0%;");
       productName.setAttribute("class", "product_name card-title");
       productPrice.setAttribute("class", "product_price card-text");
-      productLink.setAttribute("href", "test-produit.html?id=" + meuble._id);
+      productLink.setAttribute("href", "produit.html?id=" + meuble._id);
       productLink.setAttribute("class", "btn btn-secondary");
   
       /* Agencement des éléments index HTML */
