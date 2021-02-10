@@ -1,0 +1,128 @@
+/*************************************** page d'accueil *****************************************/
+
+/********************* header ******************/
+.bg{
+    background-color: #f3ebf3;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+
+.nav-link{
+    color: #000000;
+}
+/********************* body ******************/
+.row{
+    justify-content: center;
+    margin: auto!important;
+}
+
+h2{
+    padding-top: 8rem;
+}
+
+#products_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product_container{
+    width: 35%;
+}
+
+.card:hover .card-body
+{
+	visibility: visible;
+}
+
+.card-body
+{
+	visibility: hidden;
+    background: rgb(243, 235, 243, 0.8);
+	color: #5B5B5B;
+}
+
+.bottom {
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    background-color: #f3ebf3;
+}
+
+footer #left {
+    font-size: 1rem;
+    margin: 27px 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: #000000;
+}
+
+footer #right {
+    font-size: 1rem;
+    margin: 27px 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: #000000;
+}
+/********************* responsive ******************/
+@media all and (min-width: 320px) and (max-width: 1023px)
+{
+    .product_container{
+        width: inherit;
+    }
+
+    .card-body{
+        visibility: visible;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px)
+{
+    h2{
+        font-size: 1.5rem!important;
+    }
+}
+
+
+@media all and (min-width: 1023px) and (max-width: 1439px)
+{
+    .product_container{
+        width: 65%;
+    }
+}
+
+/*************************************** page produit *****************************************/
+#item_detail{
+    text-align: -webkit-center;
+    margin: 10rem 0rem 5rem 0rem;
+}
+
+.card{
+    visibility: visible;
+}
+
+.btn-secondary{
+    color: #ffffff!important;
+}
+
+/*************************************** page panier *****************************************/
+
+#head-shop{
+    padding-bottom: 8rem;
+}
+
+#title-shop{
+    padding: 0 0 2rem 0
+}
+
+#shop{
+    background-color: #f3ebf3;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
