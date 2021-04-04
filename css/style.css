@@ -1,0 +1,504 @@
+/*************************************** page d'accueil *****************************************/
+
+/********************* header ******************/
+.bg{
+    background-color: #f3ebf3;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+
+.nav-link{
+    color: #000000;
+}
+/********************* body ******************/
+.row{
+    justify-content: center;
+    margin: auto!important;
+}
+
+h2{
+    padding-top: 8rem;
+}
+
+#products_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product_container{
+    width: 35%;
+    padding: 2rem;
+}
+
+.card:hover .card-body
+{
+	visibility: visible;
+}
+
+.card-body
+{
+	visibility: hidden;
+    background: rgb(243, 235, 243, 0.8);
+	color: #5B5B5B;
+}
+
+.bottom {
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    background-color: #f3ebf3;
+}
+
+footer #left {
+    font-size: 1rem;
+    margin: 27px 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: #000000;
+}
+
+footer #right {
+    font-size: 1rem;
+    margin: 27px 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: #000000;
+}
+
+/**********page produit************/
+
+#title-product{
+    padding-top: 8rem;
+}
+
+.item_container{
+    width: 50%;
+}
+
+#item_detail{
+    text-align: -webkit-center;
+    margin: 4rem 0rem 5rem 0rem;
+}
+
+.card{
+    visibility: visible;
+}
+
+.btn-secondary{
+    color: #ffffff!important;
+}
+
+/***********page panier & page confirm************/
+#panier-recap, #confirmation-recap{
+    padding: 0rem 20rem!important;
+}
+.photo_article{
+    width: 60%!important;
+    padding: 1rem 2rem;
+}
+
+#head-shop{
+    padding-bottom: 8rem;
+}
+
+#title-shop{
+    padding: 0 0 2rem 0
+}
+
+#shop{
+    background-color: #f3ebf3;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+tr{
+    border: 0.2rem solid #000;
+}
+
+th{
+    padding: 1rem 2rem;
+    border: 0.2rem solid #000;
+    
+}
+
+td{
+    padding: 1rem 2rem;
+    border: 0.2rem solid #000;
+}
+
+#title-form{
+    padding-top: 5rem;
+}
+
+#detail_title{
+    padding-top: 3rem;
+}
+
+.photo_article_acheté{
+    padding: 1rem;
+    width: 30%;
+}
+
+.return{
+    padding: 3rem;
+}
+
+
+/**************************************************************************************** responsive **************************************************************************/
+
+/************************accueil********************/
+
+@media all and (min-width: 320px) and (max-width: 1023px)
+{
+    .product_container{
+        width: inherit;
+        padding: 0;
+        background-color: #F1F1F1;
+        margin-bottom: 4rem;
+    }
+
+    .card-body{
+        visibility: visible;
+        background: inherit;
+        color: inherit;
+        padding: 0!important;
+        min-height: 0!important;
+    }
+
+    h2{
+        padding-top: 8rem;
+    }
+
+    h3{
+        font-size: 1.5rem!important;
+    }
+    
+    #title_home{
+        margin-bottom: 4rem;;
+    }
+    
+    #products_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    figure{
+        margin: 0 0 9rem!important;
+    }
+    
+    .card-title{
+        margin-top: 1rem!important;    
+    }
+    
+    .position-absolute{
+        top: 100%;
+    }
+    
+    #elmnt_container{
+        background-color: #F1F1F1!important;
+    }
+    
+    .btn-see{
+        margin-bottom: 1rem;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1439px)
+{
+    h2{
+        font-size: 1.5rem!important;
+    }
+
+    .product_container{
+        width: 65%;
+    }
+}
+
+@media all and (min-width: 1023px) and (max-width: 1439px)
+{
+    .product_container{
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .product_name{
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .product_price{
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-body{
+        padding: 0.5rem!important;
+    }
+}
+
+/*************************************************************** page produit ******************************************************/
+@media all and (min-width: 320px) and (max-width: 1023px)
+{
+    .item_container{
+        width: 75%;
+    }
+
+    #item_detail{
+        margin: 6rem 0rem 6rem 0rem;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 2560px)
+{
+    .item_container{
+        width: 50%;
+    }
+
+}
+
+
+/********************************************************** page panier ***************************************************/
+@media all and (min-width: 320px) and (max-width: 767px)
+{
+    #title-recap_shopping{
+        font-size: 1.5rem;
+    }
+
+    th{
+        padding: 1rem;
+        font-size: 0.6rem;
+    }
+
+    td{
+        padding: 1rem 0.5rem;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .photo_article{
+        width: 100%!important;
+        padding: 0;
+    }
+
+    .form-group{
+        font-size: 0.8rem;
+    }
+
+    #title-form{
+        padding-top: 0;
+    }
+
+    
+}
+@media all and (min-width: 768px) and (max-width: 1023px)
+{
+    .recap{
+        text-align: -webkit-center;
+    }
+
+    #recap_shopping{
+        width: 80%;
+    }
+
+    #title-form{
+        padding-top: 0;
+    }
+
+    th{
+        padding: 1rem 3rem;
+    }
+
+    td{
+        text-align: center;
+    }
+
+    .photo_article{
+        width: 100%!important;
+        padding: 1rem 1rem;
+    }
+
+    form{
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px)
+{
+    .recap{
+        text-align: -webkit-center;
+    }
+
+    #recap_shopping{
+        width: 80%;
+    }
+
+    th{
+        padding: 1rem 4rem;
+    }
+
+    td{
+        text-align: center;
+    }
+
+    .photo_article{
+        width: 100%!important;
+    }
+
+    form{
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 1440px) and (max-width: 2559px)
+{
+    .recap{
+        text-align: -webkit-center;
+    }
+
+    #recap_shopping{
+        width: 80%;
+    }
+
+    table{
+        text-align: center;
+    }
+
+    th{
+        padding: 1rem 7rem;
+    }
+
+    td{
+        text-align: center;
+    }
+
+    .photo_article{
+        width: 75%!important;
+    }
+
+    form{
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 2560px)
+{
+    #confirm_recap{
+        text-align: -webkit-center;
+    }
+
+    table{
+        text-align: center;
+    }
+
+    .photo_article{
+        width: 35%!important;
+    }
+
+    th{
+        padding: 1rem 6rem;
+    }
+}
+
+/***********************************page de confirmation**********************/
+#table_recap{
+    text-align: center;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px)
+{
+    .confirmation h2{
+        font-size: 1.5rem;
+    }
+
+    #th_img_recap, #th_name_recap, #th_price_recap{
+        font-size: 0.8rem;
+        padding: 1rem 2rem!important;
+    }
+
+    .td_name_conf_recap, .td_price_conf_recap{
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
+    }
+
+    .photo_article_acheté{
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px)
+{
+    #confirm_recap{
+        text-align: -webkit-center;
+    }
+
+    #table_recap{
+        text-align: center;
+        width: 80%;
+    }
+    #th_img_recap, #th_name_recap, #th_price_recap{
+        padding: 1rem 5rem;
+    }
+    .photo_article_acheté{
+        width: 75%;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px)
+{
+    #table_recap{
+        width: 80%;
+    }
+
+    #confirm_recap{
+        text-align: -webkit-center;
+    }
+
+    #th_img_recap, #th_name_recap, #th_price_recap{
+        padding: 1rem 8rem;
+    }
+    .photo_article_acheté{
+        width: 80%;
+    }
+}
+
+@media all and (min-width: 1440px) and (max-width: 2559px)
+{
+    #table_recap{
+        width: 73%;
+    }
+
+    #confirm_recap{
+        text-align: -webkit-center;
+    }
+
+    #th_img_recap, #th_name_recap, #th_price_recap{
+        padding: 1rem 11rem;
+    }
+    .photo_article_acheté{
+        width: 60%;
+    }
+}
+
+@media all and (min-width: 2560px)
+{
+    #table_recap{
+        width: 80%;
+    }
+
+    #th_img_recap, #th_name_recap, #th_price_recap{
+        padding: 1rem 24rem;
+    }
+
+    .photo_article_acheté{
+        width: 50%;
+    }
+
+}
