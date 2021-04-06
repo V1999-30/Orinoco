@@ -35,10 +35,7 @@ getAllFurnitures = () => {
         let itemDescription = document.createElement("p");
         let itemInfoPrice = document.createElement("div");
         let itemPrice = document.createElement("p");
-        let choiceItemDetail = document.getElementById("choice");
-        let optionItemDetail = document.createElement("option");
-        let secondOptionItemDetail = document.createElement("option");
-        let thirdOptionItemDetail = document.createElement("option");
+        let choiceItemDetail = document.createElement("select");
         let itemLink = document.getElementById("add_to_cart");
     
         /*Ajout des attributs au balise produit HTML */
@@ -53,6 +50,7 @@ getAllFurnitures = () => {
         itemDescription.setAttribute("class", "item_description");
         itemInfoPrice.setAttribute("class", "item_info_price");
         itemPrice.setAttribute("class", "item_price card-text");
+        choiceItemDetail.setAttribute("id", "choices");
     
         /* Agencement des éléments produit HTML */
         itemDetail.appendChild(itemContainer);
@@ -63,10 +61,7 @@ getAllFurnitures = () => {
         itemElmnt.appendChild(itemDescription);
         itemDescription.appendChild(itemInfoPrice);
         itemElmnt.appendChild(itemPrice);
-        itemElmnt.appendChild(choiceItemDetail);
-        choiceItemDetail.appendChild(optionItemDetail);
-        choiceItemDetail.appendChild(secondOptionItemDetail);
-        choiceItemDetail.appendChild(thirdOptionItemDetail);
+        itemElmnt.appendChild(choiceItemDetail)
         itemElmnt.appendChild(itemLink);
     
         /* Contenu des balises produit HTML */
@@ -74,17 +69,17 @@ getAllFurnitures = () => {
         itemDescription.textContent = detailFurniture.description;
         itemPrice.textContent = detailFurniture.price / 100 + " €";
 
-        for (var i = 0; i <  detailFurniture.varnish.length; i++) {
-          optionItemDetail.textContent = detailFurniture.varnish[0];
+        for (var i = 0; i < detailFurniture.varnish.length; i++) {
+          let optionColor = document.getElementById("option_color");
+          let optionItemDetail = document.createElement("option");
+
+          itemContainer.appendChild(optionColor);
+          optionColor.appendChild(itemElmnt);
+          choiceItemDetail.appendChild(optionItemDetail);
+          optionItemDetail.textContent = detailFurniture.varnish[i];
         }
 
-        for (var i = 0; i <  detailFurniture.varnish.length; i++) {
-          secondOptionItemDetail.textContent = detailFurniture.varnish[1];
-        }
-
-        for (var i = 0; i <  detailFurniture.varnish.length; i++) {
-          thirdOptionItemDetail.textContent = detailFurniture.varnish[2];
-        }
+      console.log(detailFurniture);
     }
 
     
