@@ -78,8 +78,6 @@ getAllFurnitures = () => {
           choiceItemDetail.appendChild(optionItemDetail);
           optionItemDetail.textContent = detailFurniture.varnish[i];
         }
-
-      console.log(detailFurniture);
     }
 
     
